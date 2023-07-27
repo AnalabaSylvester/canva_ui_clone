@@ -1,0 +1,195 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navBar{
+
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 0 0.2rem #dadada;
+    padding: 0.8rem 3rem;
+}
+
+.navBar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navBar ul li{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.4rem 0.6rem;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.navBar ul li:hover{
+    background-color: #eaeaea;
+}
+
+.navBar ul .btn-1, 
+.navBar ul .btn-2{
+    padding: 0;
+}
+
+.navBar ul li img{
+    margin-left: 0.4rem;
+    margin-top: 0.8rem;
+    font-size: 0.8rem;
+}
+
+.navBar ul li a{
+    text-decoration: none;
+    color: #222;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+}
+
+
+.logo{
+    width: 4.5rem;
+
+}
+
+.btn{
+    display: inline-block;
+    width: 5rem;
+    height: 2.2rem;
+    line-height: 2.2rem;
+    text-align: center;
+    border-radius: 0.3rem;
+    font-weight: 500;
+    background-color: rgb(134, 59, 240);
+}
+
+.navBar ul li .btn{
+    font-size: 1rem;
+    color: white;
+
+}
+.navBar ul li .btn-primary{
+    background-color: #eaeaea;
+    color: #222;
+}
+
+.navBar ul li .btn-primary:hover{
+    background-color: #d0cccc;
+}
+
+.navBar ul li .btn-secodary:hover{
+    background-color: rgba(134, 59, 240, 0.82);
+}
+
+
+.search{
+    width: 20rem;
+    position: relative;
+    margin-left: 1rem;
+}
+
+.search input{
+    width: 100%;
+    padding: 0.5rem 0.5rem;
+    outline: none;
+    border: 1px solid rgb(216, 214, 214);
+    padding-left: 2.5rem;
+    padding-right: 1rem;
+    font-size: 1rem;
+    border-radius: 0.3rem;
+}
+.search .search-icon{
+    position: absolute;
+    top: 50%;
+    left: 7%;
+    transform: translate(-50%, -50%);
+}
+
+.navBar ul li .question{
+    font-size: 1.3rem;
+    margin: 0;
+    padding: 0;
+
+}
+
+.dropdown{
+    position: relative;    
+}
+
+.dropdown .dropdown-box{
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    margin-top: 15px;
+    left: 0;
+    display: flex;
+    padding: 1rem 1.7rem;
+    border-radius: 0.3rem;
+    box-shadow: 0 0 0.5rem rgba(0,0,0,0.5);
+    display: none;
+}
+
+.dropdown:hover .dropdown-box{
+    display: flex;
+}
+
+
+.dropdown-box ul{
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0.5rem;
+}
+
+.dropdown-box ul li{
+    margin: 0;
+    padding: 0.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: -0.5rem;
+}
+
+.dropdown ul li a{
+    font-size: 1rem;
+}
+
+.dropdown-box.img-container{
+    width: 11rem;
+    height: 7rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.dropdown-box .img-container{
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s;
+    border-radius: 0.5rem;
+}
+
+.dropdown-box .top:hover img{
+    transform: scale(1.1);
+    transition: all 0.8s;
+}
+
+.dropdown-box .download{
+    margin-left: 1rem;
+}
+
+.top p{
+    font-weight: 600;
+    padding: 0.5rem;
+    margin-left: -0.5rem;
+    border-radius: 0.3rem;
+    margin-top: 0.5rem;
+}
+
+.top p:hover{
+    background-color: #eaeaea;
+    color: rgba(134, 59, 240, 0.82);
+}
